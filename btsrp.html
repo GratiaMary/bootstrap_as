@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+     body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+     }
+
+     form {
+        max-width: 600px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     }
+
+     label {
+        font-weight: bold;
+     }
+
+     input {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+     }
+
+     #firstName {
+        background-color: #ffe6e6; /* Light red */
+     }
+
+     #lastName {
+        background-color: #e6f7ff; /* Light blue */
+     }
+
+     #email {
+        background-color: #fff0b3; /* Light yellow */
+     }
+
+     #password {
+        background-color: #e6ffe6; /* Light green */
+     }
+
+     button {
+        padding: 10px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+     }
+
+     button:hover {
+        background-color: #45a049;
+     }
+  </style>
+  <title>Registration Form</title>
+</head>
+<body>
+  <form class="container">
+     <div class="row">
+        <div class="col-md-6">
+           <label for="firstName">First Name:</label>
+           <input type="text" id="firstName" name="firstName" required>
+        </div>
+        <div class="col-md-6">
+           <label for="lastName">Last Name:</label>
+           <input type="text" id="lastName" name="lastName" required>
+        </div>
+     </div>
+
+     <div class="row">
+        <div class="col-md-6">
+           <label for="email">Email:</label>
+           <input type="email" id="email" name="email" required>
+        </div>
+        <div class="col-md-6">
+           <label for="password">Password:</label>
+           <input type="password" id="password" name="password" required>
+        </div>
+     </div>
+
+     <div class="row">
+        <div class="col-12">
+           <button type="submit" class="btn btn-success">Register</button>
+        </div>
+     </div>
+  </form>
+
+  <!-- Bootstrap JS and jQuery (for Bootstrap) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
